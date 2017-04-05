@@ -9,6 +9,12 @@ menu:
   Categories: categories
   Tags: tags
   About: about
+#menu:
+#   主页: /
+#   归档: archives
+#   分类: categories
+#   标签: tags
+#   关于我们: about
 rss: /atom.xml
 
 since: 2013
@@ -22,13 +28,13 @@ favicon: css/images/favicon.ico
 
 # Put your avatar.jpg into `hexo-site/themes/hiero/source/` directory.
 # url is target link (E.g. `url: https://hexo.io/logo.svg` or `url: css/images/mylogo.jpg`)
-avatar: 
+avatar:
   enable: false
   width: 124
   height: 124
   bottom: 10
   url: https://hexo.io/logo.svg
-  
+
 
 # AboutPage background
 about_big_image: css/images/pose.jpg
@@ -52,19 +58,20 @@ widgets:
 - tag
 - tagcloud
 - archive
+- links
 
 # Social Links
 # Key is the name of FontAwsome icon.
 # Value is the target link (E.g. GitHub: https://github.com/iTimeTraveler)
 social:
-  Github: https://github.com/iTimeTraveler
-  Weibo: http://www.yoursite.com
-  Twitter: 
-  Facebook: 
-  Google-plus: 
-  Instagram: 
-  Pinterest: 
-  Flickr: 
+  Github: https://github.com/levinliu
+  Weibo: http://weibo.com/liumh1989
+#  Twitter:
+#  Facebook:
+#  Google-plus:
+#  Instagram:
+#  Pinterest:
+#  Flickr:
 
 
 # Search
@@ -75,7 +82,8 @@ search:
 
 
 # comment ShortName, you can choose only ONE to display.
-duoshuo_shortname: iTimeTraveler
+yungentie_shortname: minghong
+duoshuo_shortname:
 disqus_shortname:
 
 

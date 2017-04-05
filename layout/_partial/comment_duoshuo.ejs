@@ -1,6 +1,6 @@
 <% if (theme.duoshuo_shortname){ %>
 	<div id="comment">
-
+	
 	<!-- 多说评论框 start -->
 	 <div class="ds-thread" data-thread-key="<%- config.root %><%- post.path %>" data-title="<%- post.title %>" data-url="<%- post.permalink %>"></div>
 	<!-- 多说评论框 end -->
@@ -12,33 +12,12 @@
 	    ds.type = 'text/javascript';ds.async = true;
 	    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
 	    ds.charset = 'UTF-8';
-	    (document.getElementsByTagName('head')[0]
+	    (document.getElementsByTagName('head')[0] 
 	     || document.getElementsByTagName('body')[0]).appendChild(ds);
 	  })();
 	  </script>
 	<!-- 多说公共JS代码 end -->
-
-
-
-	</div>
-	<%- css('css/comment.css') %>
-<% } else if (theme.yungentie_shortname) {%>
-	<div id="comment">
-	<!-- 云跟贴评论框 start -->
-<div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
-<script>
-var cloudTieConfig = {
-	url: document.location.href,
-	sourceId: "",
-	productKey: "30f204fa628d4eefb5bd107c065147dc",
-	target: "cloud-tie-wrapper"
-};
-var yunManualLoad = true;
-Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
-</script>
-	<!-- 云跟贴公共JS代码 end -->
-
+	
 	</div>
 	<%- css('css/comment.css') %>
 <% } else if (theme.disqus_shortname) {%>
